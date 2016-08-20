@@ -4,6 +4,8 @@
       _analyticsUserId: "2f0a970f-48ea-4de1-8155-c60310c2025e"
     js:
       beautify_on_save: true
+  "atom-ternjs":
+    useSnippets: true
   core:
     ignoredNames: [
       ".git"
@@ -18,13 +20,19 @@
   editor:
     fontSize: 15
     scrollPastEnd: true
+  esformatter:
+    formatOnSave: true
   "exception-reporting":
     userId: "3866367c-60cc-6ea5-c387-0c72bac7aeee"
+  "linter-eslint":
+    fixOnSave: true
+    globalNodePath: "C:\\Program Files (x86)\\Nodist\\v-x64\\6.3.1"
   minimap:
     plugins:
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0
   "standard-formatter":
+    checkStyleDevDependencies: true
     formatOnSave: true
   "terminal-plus":
     core: {}
