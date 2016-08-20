@@ -20,7 +20,15 @@
     scrollPastEnd: true
   "exception-reporting":
     userId: "3866367c-60cc-6ea5-c387-0c72bac7aeee"
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
   "standard-formatter":
     formatOnSave: true
+  "terminal-plus":
+    core: {}
+    toggles:
+      autoClose: true
   welcome:
     showOnStartup: false
