@@ -1,0 +1,15 @@
+version: "{build}"
+platform: x64
+branches:
+  only:
+    - master
+skip_tags: true
+test: off
+deploy: off
+
+before_build:
+  - ps: Install-Product node 6
+  - npm install -g sass-lint
+
+build_script:
+  - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/atom/ci/master/build-package.ps1'))

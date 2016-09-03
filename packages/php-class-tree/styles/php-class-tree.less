@@ -1,0 +1,60 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+@font-face {
+	font-family: 'icomoon';
+	font-weight: normal;
+	font-style: normal;
+	src: url(atom://php-class-tree/resources/fonts/icomoon.woff) format('woff');
+}
+
+.php-class-tree-view {
+	position: relative;
+	width: 200px;
+	height: 100%;
+	overflow: hidden;
+
+	> .resize-handle {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: -5px;
+		z-index: 10;
+		display: block;
+		width: 10px;
+		cursor: e-resize;
+	}
+
+	> .scroller {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 27px;
+		display: block;
+		overflow: auto;
+
+		> .list-tree {
+			min-height: 100%;
+			width: auto;
+			min-width: -webkit-min-content;
+			padding-left: 5px;
+			padding-right: 10px;
+		}
+	}
+
+	.name::before {
+		font-family: 'icomoon';
+		content: attr(data-content-before);
+	}
+
+	.name::after {
+		position: absolute;
+		right: 10px;
+		font-family: 'icomoon';
+		content: attr(data-content-after);
+	}
+}

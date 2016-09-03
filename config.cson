@@ -18,8 +18,9 @@
     ]
     projectHome: "C:\\projects\\"
   editor:
-    fontSize: 15
+    fontSize: 16
     scrollPastEnd: true
+    showIndentGuide: true
   esformatter:
     formatOnSave: true
   "exception-reporting":
@@ -38,5 +39,8 @@
     core: {}
     toggles:
       autoClose: true
+  "tree-view":
+    alwaysOpenExisting: true
+    hideIgnoredNames: true
   welcome:
     showOnStartup: false
